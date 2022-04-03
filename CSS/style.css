@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .wrapper{
+    max-width: 1066px;
+    width: 100%;
+    margin: 10px auto; 
+    /* rom ganvatavso centrshi */
+    /* position: relative;
+} */
+ /* .image-content{
+    width: 100%;
+} */
+.title{
+    /* width: 200px;
+    position: absolute;
+    right: 150px;
+    bottom: 50px; */
+    color: white;
+    text-align: center;
+    transition-property: all;
+    /* transitiom property gansazgvravs im propertebs romlebzec gavrceldeba moqmedeba */
+    transition-duration: 0.5s;
+    /* ramden xanshi gamochndes cvlileba */
+    transition-delay: 0.5s;
+    /* ramden xanshi gaqres cvlileba */
+    transition-timing-function: linear;
+    /* ease-> animacia iwyeba swrapad da mtavrdeba gvoan/ linear-> dawyeba da damtavreba tanabradaa gadanawilebuli*/
+    /* transition: all 0.5s linear 0.5s; -->> shemidzlia mokled asec chavwerp */
+} 
+.title:hover{
+    color: orangered;
+    border-bottom: 3px dotted green;
+}
+.wrapper{
+    background-image: url(../Images/british.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* cover->> aigos is zomebi rac mivutite */
+    background-position: center ;
+    /* position->>> potos romeli nawili machvenos */
+    height: 500px;
+    width: 400px;
+    position: relative;
+    padding: 150px 0 0;
+}
+.wrapper:hover{
+    background-repeat: repeat;
+    background-size: contain;
+}
+.wrapper:hover .title{
+    font-size: 40px;
+}
+/* im shemtxvevashi tu minda rom mshobel elementze mausis gadatarebosas icvlebodes shvili elementi */
+
+.animation-wrapper{
+    height: 700px;
+    position: relative;
+} 
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    position: absolute;
+    /* top: 50px; */
+    left: 50px;
+    border-radius: 20px ;
+    z-index: 10;
+    animation-name: mybox;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+    /* rogor minda rom sawyis pozicias daubrundes */
+    /* animation-iteration-count: infinite ; */
+    /* iteration -> ramdenjer minda rom gameordes animacia */
+    animation-fill-mode: forwards;
+    /* ra poziciaze gacherdes animacia - sadac wavida tu saidanac daiwyo */
+} 
+ 
+@keyframes mybox {
+    /* from */
+    0%{
+        top: 50px;
+        transform: rotate(45deg) scale(1.5) skew(50deg);
+        /* scale-> gazrda */
+    }
+    /* shemidzlia nebismier wertilshi mivanicho sasurveli property */
+    /* to */
+    100%{
+        top: 350px;
+        transform: rotate(90deg);
+    }
+}
